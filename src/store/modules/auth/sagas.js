@@ -14,6 +14,7 @@ export function* signIn({ payload }) {
         'Erro no login',
         'O usuário não pode ser um prestador de serviços!'
       )
+      yield put(signFailure())
       return
     }
 

@@ -13,8 +13,6 @@ import {
   SignLinkText
 } from './styles'
 
-// import { Container } from './styles';
-
 export default function SignUp({ navigation }) {
   const dispatch = useDispatch()
   const loading = useSelector(state => state.auth.loading)
@@ -45,7 +43,7 @@ export default function SignUp({ navigation }) {
           />
           <FormInput
             icon="mail-outline"
-            alue={email}
+            value={email}
             onChangeText={setEmail}
             placeholder="Digite seu email"
             keyboardType="email-address"
@@ -58,7 +56,7 @@ export default function SignUp({ navigation }) {
           <FormInput
             secureTextEntry
             icon="lock-outline"
-            alue={password}
+            value={password}
             onChangeText={setPassword}
             placeholder="Sua senha secreta"
             ref={passwordRef}
