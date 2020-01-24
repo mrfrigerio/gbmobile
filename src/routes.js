@@ -47,6 +47,7 @@ const bottomTabNavigator = createBottomTabNavigator(
     Profile
   },
   {
+    resetOnBlur: true,
     tabBarOptions: {
       keyboardHidesTabBar: true,
       activeTintColor: '#fff',
